@@ -1,0 +1,78 @@
+#splash
+  width: 100%
+  height: 500px
+  background-image: url("../images/splash-background.png")
+
+  .content
+    width: 80%
+    height: 100%
+    margin: auto
+
+    #splash-content
+      width: 100%
+      height: 100%
+
+      #splash-video
+        width: 50%
+        float: right
+        opacity: 0
+
+        #splash-video-div
+          width: 80%
+          height: 300px
+          background-color: rgba(255,255,255,0)
+          margin-top: 100px
+
+      #splash-text
+        width: 40%
+        float: left
+        margin-top: 13%
+        margin-left: 10%
+        opacity: 0
+
+      .fade-in-animation
+        opacity: 1
+        -webkit-animation: Fade-In 1s
+        -moz-animation: Fade-In 1s
+        -ms-animation: Fade-In 1s;
+        -o-animation: Fade-In 1s;
+        animation: Fade-In 1s;
+
+
+@media screen and (max-width: 1200px)
+  #splash
+    .content
+      width: 90%
+
+
+@media screen and (max-width: 980px)
+  #splash
+    .content
+      #splash-content
+        #splash-video
+          width: 100%
+          float: none
+          padding-top: 10px
+
+          #splash-video-div
+            margin: 0
+            margin: auto
+            width: 100%
+
+        #splash-text
+          width: 100%
+          float: none
+          margin: 0
+          text-align: center
+
+
+@media screen and (max-width: 475px)
+  #splash
+    height: 550px
+
+
+@keyframes Fade-In
+  from
+    opacity: 0
+  to
+    opacity: 1

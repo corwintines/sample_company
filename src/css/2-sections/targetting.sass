@@ -1,0 +1,61 @@
+#targetting
+  height: 500px
+  width: 100%
+
+  .content
+    #targetting-content
+      margin: auto
+      width: 80%
+      height: 100%
+
+      #targetting-images
+        height: 400px
+        margin-top: 50px
+        width: 60%
+        float: right
+        opacity: 0
+        background: rgba(0,0,0,0.3)
+        text-align: center
+
+        h2
+          margin-top: 160px
+
+      #targetting-text
+        width: 30%
+        float: left
+        opacity: 0
+        margin-top: 10%
+
+        h2
+          text-align: center
+          color: #353535
+
+        p
+          margin-bottom: 20px
+          margin-left: 10px
+
+      .fade-in-animation
+        opacity: 1
+        -webkit-animation: Fade-In 1s
+        -moz-animation: Fade-In 1s
+        -ms-animation: Fade-In 1s
+        -o-animation: Fade-In 1s
+        animation: Fade-In 1s
+
+@media screen and (max-width: 980px)
+  #targetting
+    height: 950px
+    .content
+      #targetting-content
+        #targetting-images
+          margin-top: 20px
+          width: 100%
+          float: none
+
+          h2
+            margin-top: 0
+
+        #targetting-text
+          width: 100%
+          float: none
+          margin-top: 0

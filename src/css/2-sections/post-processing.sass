@@ -1,0 +1,62 @@
+#post-processing
+  height: 500px
+  width: 100%
+
+  .content
+    #post-processing-content
+      margin: auto
+      width: 80%
+      height: 100%
+
+      #post-processing-images
+        height: 400px
+        margin-top: 50px
+        width: 60%
+        float: left
+        opacity: 0
+        background: rgba(0,0,0,0.3)
+        text-align: center
+
+        h2
+          margin-top: 160px
+
+      #post-processing-text
+        width: 30%
+        float: right
+        opacity: 0
+        margin-top: 10%
+
+        h2
+          text-align: center
+          color: #353535
+
+        p
+          margin-bottom: 20px
+          margin-left: 10px
+
+      .fade-in-animation
+        opacity: 1
+        -webkit-animation: Fade-In 1s
+        -moz-animation: Fade-In 1s
+        -ms-animation: Fade-In 1s
+        -o-animation: Fade-In 1s
+        animation: Fade-In 1s
+
+
+@media screen and (max-width: 980px)
+  #post-processing
+    height: 600px
+    .content
+      #post-processing-content
+        #post-processing-images
+          margin-top: 20px
+          width: 100%
+          float: none
+
+          h2
+            margin-top: 0
+
+        #post-processing-text
+          width: 100%
+          float: none
+          margin-top: 0

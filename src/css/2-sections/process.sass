@@ -1,0 +1,140 @@
+#process
+  width: 100%
+  height: 500px
+  background-image: url("../images/process-background.png")
+  background-size: cover
+
+  .content
+
+    #process-content
+      width: 80%
+      height: 100%
+      margin: auto
+
+      #process-text
+        width: 50%
+        height: 100%
+        float: left
+        margin-top: 120px
+        opacity: 0
+
+        h2
+          text-align: center
+
+        p
+          color: white
+          margin-right: 20px
+
+      #process-sections
+        width: 50%
+        height: 100%
+        float: right
+
+        #process-pre-processing
+          width: 50%
+          height: 250px
+          float: left
+          text-align: center
+          opacity: 0
+
+          #process-pre-processing-image
+            margin-top: 30px
+            height: 50%
+            width: 100%
+            background-color: #BCBCBC
+            mask: url('../images/004-cogwheel-1.svg') no-repeat center
+
+        #process-insertion
+          width: 50%
+          height: 250px
+          float: right
+          text-align: center
+          opacity: 0
+
+          #process-insertion-image
+            margin-top: 30px
+            height: 50%
+            width: 100%
+            background-color: #BCBCBC
+            mask: url('../images/002-web.svg') no-repeat center
+
+        #process-post-processing
+          width: 50%
+          height: 250px
+          float: left
+          text-align: center
+          opacity: 0
+
+          #process-post-processing-image
+            margin-top: 20px
+            height: 50%
+            width: 100%
+            background-color: #BCBCBC
+            mask: url('../images/003-cogwheel.svg') no-repeat center
+
+        #process-targetting
+          width: 50%
+          height: 250px
+          float: right
+          text-align: center
+          opacity: 0
+
+          #process-targetting-image
+            margin-top: 20px
+            height: 50%
+            width: 100%
+            background-color: #BCBCBC
+            mask: url('../images/001-target.svg') no-repeat center
+
+      .fade-in-animation
+        opacity: 1
+        -webkit-animation: Fade-In 1s
+        -moz-animation: Fade-In 1s
+        -ms-animation: Fade-In 1s;
+        -o-animation: Fade-In 1s;
+        animation: Fade-In 1s;
+
+
+@media screen and (max-width: 980px)
+  #process
+    height: 700px
+    background-size: cover
+    .content
+      #process-content
+        #process-text
+          width: 100%
+          float: none
+          text-align: center
+          margin: 0
+
+          h2
+            margin: 0
+            margin-bottom: 20px
+            padding-top: 30px
+
+        #process-sections
+          width: 100%
+          float: none
+
+
+@media screen and (max-width: 550px)
+  #process
+    height: 1300px
+    .content
+      #process-content
+        #process-sections
+          #process-pre-processing
+            width: 100%
+            float: none
+
+          #process-insertion
+            width: 100%
+            float: none
+
+          #process-post-processing
+            width: 100%
+            float: none
+
+          #process-targetting
+            width: 100%
+            float: none

@@ -1,0 +1,118 @@
+a #test
+  display: block
+  position: relative
+  top: -250px
+  visibility: hidden
+#about
+  height: 400px
+
+  .content
+    width: 80%
+    height: 100%
+    margin: auto
+
+    #about-title
+      text-align: center
+      opacity: 0
+
+      h1
+        color: #353535
+
+    #about-information
+      width: 100%
+      margin: auto
+      margin-left: 7%
+      opacity: 0
+
+      #about-products
+        width: 25%
+        height: 180px
+        float: left
+        margin: 10px 0
+        padding: 10px
+        border-style: hidden solid hidden hidden
+        border-color: #BCBCBC
+        border-width: 1px
+        text-align: center
+
+        p
+          margin-top: 20px
+
+      #about-processing
+        width: 25%
+        height: 180px
+        float: left
+        margin: 10px 0
+        padding: 10px
+        border-style: hidden solid hidden hidden
+        border-color: #BCBCBC
+        border-width: 1px
+        text-align: center
+
+        p
+          margin-top: 20px
+
+      #about-targetting
+        width: 25%
+        height: 200px
+        float: left
+        margin: 10px 10px 10px 0
+        padding: 10px
+        text-align: center
+
+        p
+          margin-top: 20px
+
+
+    .fade-in-animation
+      opacity: 1
+      -webkit-animation: Fade-In 1s
+      -moz-animation: Fade-In 1s
+      -ms-animation: Fade-In 1s;
+      -o-animation: Fade-In 1s;
+      animation: Fade-In 1s;
+
+
+@media screen and (max-width: 1200px)
+  #about
+    .content
+      width: 90%
+
+
+@media screen and (max-width: 980px)
+  #about
+    height: 600px
+    .content
+      #about-information
+        margin: 0
+        #about-products
+          width: 100%
+          height: 100px
+          float: none
+          border: none
+          margin: 0
+          margin: auto
+
+        #about-processing
+          width: 100%
+          height: 100px
+          float: none
+          border: none
+
+        #about-targetting
+          width: 100%
+          height: 100px
+          float: none
+          border: none
+
+
+@media screen and (max-width: 453px)
+  #about
+    height: 700px
+
+
+@keyframes Fade-In
+  from
+    opacity: 0
+  to
+    opacity: 1
